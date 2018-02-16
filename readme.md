@@ -25,20 +25,20 @@ A rich collection of official plugins integrating the best tools in the frontend
 Vue CLI aims to be the standard tooling baseline for the Vue ecosystem. It ensures the various build tools work smoothly together with sensible defaults so you can focus on writing your app instead of spending days wrangling with configurations. At the same time, it still offers the flexibility to tweak the config of each tool without the need for ejecting.
 
 # Usage
-Vue uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying Vue instance’s data. All Vue templates are valid HTML that can be parsed by spec-compliant browsers and HTML parsers. Under the hood, Vue compiles the templates into virtual DOM render functions. Combined with the reactivity system, Vue is able to intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulation when the app state changes.
+Vue uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying Vue instance’s data. All Vue templates are valid HTML that can be parsed by spec-compliant browsers and HTML parsers. Under the hood, Vue compiles the templates into virtual DOM render functions. Combined with the reactivity system, Vue is able to intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulation when the app state changes.  
 
 In Vue, you can use the template syntax or choose to directly write render functions using JSX. In order to do so just replace the template option with a render function.[7] Render functions open up possibilities for powerful component-based patterns — for example, the new transition system is now completely component-based, using render functions internally.[8]
 Usage: vue <command> [options]
 
 Commands:
-
+```
   create [options] <app-name>      create a new project powered by vue-cli-service
   invoke <plugin> [pluginOptions]  invoke the generator of a plugin in an already created project
   inspect [options] [paths...]     inspect the webpack config in a project with vue-cli-service
   serve [options] [entry]          serve a .js or .vue file in development mode with zero config
   build [options] [entry]          build a .js or .vue file in production mode with zero config
   init <template> <app-name>       generate a project from a remote template (legacy API, requires @vue/cli-init)
-
+```
 # Creating a new Project
 Usage: create [options] <app-name>
 
@@ -46,7 +46,7 @@ create a new project powered by vue-cli-service
 
 
 Options:
-
+```
   -p, --preset <presetName>       Skip prompts and use saved preset
   -d, --default                   Skip prompts and use default preset
   -i, --inlinePreset <json>       Skip prompts and use inline JSON string as preset
@@ -54,6 +54,9 @@ Options:
   -r, --registry <url>            Use specified npm registry when installing dependencies (only for npm)
   -f, --force                     Overwrite target directory if it exists
   -h, --help                      output usage information
+
+```
+ 
 vue create my-project
 
 -after creating a new project, you can use default or manual presets.
