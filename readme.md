@@ -96,7 +96,7 @@ The data and the DOM are now linked, and everything is now reactive
 Writing an if statement is simple, too. Simply, write v-if="Something Something Something". Using a span tag is also something Vue utilizes often, as well.
 
 # Documentation
--Lot's of stackoverflow questions and answers.
+-Lot's of stackoverflow questions and answers.  
 -The Vue.js docs are excellent and can be found here:
 
 [Vue.js Docs](https://vuejs.org/v2/guide/index.html#Declarative-Rendering)
