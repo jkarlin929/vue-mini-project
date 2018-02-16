@@ -5,6 +5,9 @@
 -Vue (pronounced like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
 -Chrome Ext. VueDevTools comes in handy.
 
+# History
+Vue was created by Evan You after working for Google using AngularJS in a number of projects. He later summed up his thought process, "I figured, what if I could just extract the part that I really liked about Angular and build something really lightweight without all the extra concepts involved?"[6] Vue was originally released in February 2014.
+
 # Installing
 npm install -g @vue/cli
 vue create my-project
@@ -22,6 +25,9 @@ A rich collection of official plugins integrating the best tools in the frontend
 Vue CLI aims to be the standard tooling baseline for the Vue ecosystem. It ensures the various build tools work smoothly together with sensible defaults so you can focus on writing your app instead of spending days wrangling with configurations. At the same time, it still offers the flexibility to tweak the config of each tool without the need for ejecting.
 
 # Usage
+Vue uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying Vue instance’s data. All Vue templates are valid HTML that can be parsed by spec-compliant browsers and HTML parsers. Under the hood, Vue compiles the templates into virtual DOM render functions. Combined with the reactivity system, Vue is able to intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulation when the app state changes.
+
+In Vue, you can use the template syntax or choose to directly write render functions using JSX. In order to do so just replace the template option with a render function.[7] Render functions open up possibilities for powerful component-based patterns — for example, the new transition system is now completely component-based, using render functions internally.[8]
 Usage: vue <command> [options]
 
 Commands:
